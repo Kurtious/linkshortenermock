@@ -3,11 +3,9 @@
 
 Link Shortener Service:
 
-I chose to use Scalatra for efficiency and MongoDB for high performance data storage.
-(I also developed endpoints for SQL based storages too. However for this use case its not well fit)
-For the shortening I utilised murmur3 Hash function to generate a shorter link(code) and buckets to avoid Hash conflicts.
-I chose MongoDB over other solution for its performance and flexibility. 
-Also because its document based it allows me to query easier over a set of documents without having to care of schemas. 
+A light-weight Scalatra service for high performance link shortening and redirecting.
+It utilises murmur3 Hash function to generate a shorter link(code) and buckets to avoid Hash conflicts.
+The persistence is based on MongoDB, a high performance and flexibile solution allowing query easier over a set of documents without having to care of schemas. 
 
 ## Build & Run ##
 I assume MongoDB is installed and accessible under 127.0.0.1:27017
